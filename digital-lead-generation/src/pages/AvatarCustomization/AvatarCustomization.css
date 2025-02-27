@@ -1,0 +1,107 @@
+.customization-container {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.customization-title {
+  font-size: var(--font-size-2xl);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.avatar-container {
+  width: 300px;
+  height: 300px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  margin-bottom: var(--spacing-lg);
+  border: 2px solid var(--tertiary-color);
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.options-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  background-color: var(--surface-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.customization-select {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--tertiary-color);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-md);
+  transition: all 0.2s ease;
+}
+
+.customization-select:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px var(--secondary-color);
+}
+
+.update-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: var(--spacing-lg);
+}
+
+.update-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.share-container {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.share-button {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.share-button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .customization-container {
+    padding: var(--spacing-md);
+  }
+
+  .avatar-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .options-container {
+    padding: var(--spacing-md);
+  }
+}
